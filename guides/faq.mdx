@@ -1,0 +1,45 @@
+---
+title: "FAQ"
+---
+
+## What's the difference between *normalized* data and *absolute* data?
+
+Google Trends uses a methodology called normalization to adjust the raw search data, turning it into an interest ranking from 0-100, with 100 representing a keyword's peak popularity during the selected time frame, 50 representing half of that peak, and 0, insufficient data.
+
+Our [Interest endpoint](https://glimpse-enterprise.readme.io/reference/get_v1-interest) returns this normalized data, directly as Google Trends shows it in their web app. Our [Interest\_enriched endpoint](https://glimpse-enterprise.readme.io/reference/interest-enriched) returns the datapoints as absolute search volume numbers, in addition to other metrics like YoY growth and MoM growth.
+
+If you are looking to do custom calculations on how interest has changed over time, the Interest endpoint is a cheaper and faster solution. If you need absolute volumes, or any of these other growth metrics, the Interest\_enriched endpoint is the right choice.
+
+## Why am I seeing slight variations in historical data?
+
+Google Trends uses a sample dataset (a subset of data representing the whole) rather than the entire dataset, a decision explained in its documentation. This leads to faster loading times and keeps costs down.
+
+However, this also means that sometimes when you make the same request after some time has elapsed, the historical data may look ever so slightly different. This difference – and the variance in general – is more visible with lower volume search queries (see the [Law of Large Numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers)).
+
+**High-Volume Keyword**
+
+<Frame>
+<img height="200" src="/images/faq1.png" />
+</Frame>
+
+**Medium-Volume Keyword**
+
+<Frame>
+<img height="200" src="/images/faq2.png" />
+</Frame>
+
+**Low-Volume Keyword**
+
+<Frame>
+<img height="200" src="/images/faq3.png" />
+</Frame>
+
+Practically speaking though, there isn’t much cause for concern. The differences between the data are generally in-line with how statistically significant those signals would be.
+
+For example, with the low volume keyword chart above, the data is coming from merely a few dozen searches. With such an exceedingly small sample size, even though the data is drastically different, it doesn't represent a meaningful difference that would even allow allow it to inform any decision-making.
+
+## Need Support?
+
+If you encounter any issues or have questions, don't hesitate to reach out to us at [hello@meetglimpse.com.](mailto:hello@meetglimpse.com.) Our support team is ready and eager to assist you.
+
+***

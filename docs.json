@@ -1,67 +1,50 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Glimpse Enterprise Documentation",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2234d8",
+    "light": "#6AAEF5",
+    "dark": "#2234d8"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.jpeg",
+  "fonts": {
+    "heading": {
+      "family": "Inter Latin",
+      "source": "https://mintlify-assets.b-cdn.net/inter-latin-wght-normal.C2S99t-D.woff2",
+      "format": "woff2"
+    },
+    "body": {
+      "family": "Inter Latin",
+      "source": "https://mintlify-assets.b-cdn.net/inter-latin-wght-normal.C2S99t-D.woff2",
+      "format": "woff2"
+    }
+  },
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Overview",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "guides/getting-started",
+              "guides/geographical-filtering",
+              "guides/phrase-match",
+              "guides/cache-durations",
+              "guides/errors",
+              "guides/faq"
             ]
           }
         ]
       },
       {
         "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
+        "openapi": ["glimpse-api.json"]
       }
     ],
     "global": {
       "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
         {
           "anchor": "Community",
           "href": "https://mintlify.com/community",
@@ -76,27 +59,26 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
+    "light": "/logo/logo.svg",
     "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:hello@meetglimpse.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Get an API Key",
+      "href": "https://meetglimpse.com/#api"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/meetglimpse?lang=en",
+      "linkedin": "https://www.linkedin.com/company/meetglimpse"
     }
   }
 }
