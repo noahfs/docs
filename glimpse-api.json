@@ -115,9 +115,6 @@
           },
           "422": {
             "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
-          },
-          "default": {
-            "$ref": "#/components/responses/DEFAULT_ERROR"
           }
         }
       }
