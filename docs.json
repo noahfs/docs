@@ -35,6 +35,7 @@
       },
       {
         "group": "API Reference",
+        "collapsed": false,
         "openapi": ["glimpse-api.json"]
       }
     ]
