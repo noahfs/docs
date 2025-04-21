@@ -45,12 +45,6 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hello@meetglimpse.com"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Get an API Key",
