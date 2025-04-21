@@ -23,7 +23,7 @@
   "navigation": {
     "groups": [
       {
-        "group": "Overview",
+        "group": "API Overview",
         "pages": [
           "guides/getting-started",
           "guides/geographical-filtering",
