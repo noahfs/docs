@@ -2,15 +2,12 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Glimpse Enterprise Documentation",
-
   "colors": {
     "primary": "#2234d8",
     "light": "#6AAEF5",
-    "dark":  "#2234d8"
+    "dark": "#2234d8"
   },
-
   "favicon": "/favicon.jpeg",
-
   "fonts": {
     "heading": {
       "family": "Inter Latin",
@@ -23,8 +20,6 @@
       "format": "woff2"
     }
   },
-
-  /* 🔑  ONE sidebar, NO tabs  */
   "navigation": {
     "groups": [
       {
@@ -44,27 +39,21 @@
       }
     ]
   },
-
   "logo": {
     "light": "/logo/logo.svg",
-    "dark":  "/logo/dark.svg"
+    "dark": "/logo/dark.svg"
   },
-
   "navbar": {
     "links": [
-      { "label": "Support", "href": "mailto:hello@meetglimpse.com" }
+      {
+        "label": "Support",
+        "href": "mailto:hello@meetglimpse.com"
+      }
     ],
     "primary": {
       "type": "button",
       "label": "Get an API Key",
       "href": "https://meetglimpse.com/#api"
-    }
-  },
-
-  "footer": {
-    "socials": {
-      "x":        "https://x.com/meetglimpse?lang=en",
-      "linkedin": "https://www.linkedin.com/company/meetglimpse"
     }
   }
 }
