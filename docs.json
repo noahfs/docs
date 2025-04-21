@@ -42,7 +42,7 @@
         "tab": "API Reference",
         "openapi": ["glimpse-api.json"]
       }
-    ],
+    ]
   },
   "logo": {
     "light": "/logo/logo.svg",
