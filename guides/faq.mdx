@@ -2,13 +2,13 @@
 title: "FAQ"
 ---
 
-## What's the difference between *normalized* data and *absolute* data?
+## What's the difference between _normalized_ data and _absolute_ data?
 
 Google Trends uses a methodology called normalization to adjust the raw search data, turning it into an interest ranking from 0-100, with 100 representing a keyword's peak popularity during the selected time frame, 50 representing half of that peak, and 0, insufficient data.
 
-Our [Interest endpoint](https://glimpse-enterprise.readme.io/reference/get_v1-interest) returns this normalized data, directly as Google Trends shows it in their web app. Our [Interest\_enriched endpoint](https://glimpse-enterprise.readme.io/reference/interest-enriched) returns the datapoints as absolute search volume numbers, in addition to other metrics like YoY growth and MoM growth.
+Our [Interest endpoint](https://glimpse-enterprise.readme.io/reference/get_v1-interest) returns this normalized data, directly as Google Trends shows it in their web app. Our [Interest_enriched endpoint](https://glimpse-enterprise.readme.io/reference/interest-enriched) returns the datapoints as absolute search volume numbers, in addition to other metrics like YoY growth and MoM growth.
 
-If you are looking to do custom calculations on how interest has changed over time, the Interest endpoint is a cheaper and faster solution. If you need absolute volumes, or any of these other growth metrics, the Interest\_enriched endpoint is the right choice.
+If you are looking to do custom calculations on how interest has changed over time, the Interest endpoint is a cheaper and faster solution. If you need absolute volumes, or any of these other growth metrics, the Interest_enriched endpoint is the right choice.
 
 ## Why am I seeing slight variations in historical data?
 
@@ -19,19 +19,28 @@ However, this also means that sometimes when you make the same request after som
 **High-Volume Keyword**
 
 <Frame>
-<img height="200" src="/images/faq1.png" />
+  <img
+    height="200"
+    src="/images/faq1.png"
+  />
 </Frame>
 
 **Medium-Volume Keyword**
 
 <Frame>
-<img height="200" src="/images/faq2.png" />
+  <img
+    height="200"
+    src="/images/faq2.png"
+  />
 </Frame>
 
-**Low-Volume Keyword**
+**Ultra-Low-Volume Keyword**
 
 <Frame>
-<img height="200" src="/images/faq3.png" />
+  <img
+    height="200"
+    src="/images/faq3.png"
+  />
 </Frame>
 
 Practically speaking though, there isn’t much cause for concern. The differences between the data are generally in-line with how statistically significant those signals would be.
@@ -42,4 +51,4 @@ For example, with the low volume keyword chart above, the data is coming from me
 
 If you encounter any issues or have questions, don't hesitate to reach out to us at [hello@meetglimpse.com.](mailto:hello@meetglimpse.com.) Our support team is ready and eager to assist you.
 
-***
+---
