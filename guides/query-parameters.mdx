@@ -1,0 +1,24 @@
+---
+title: "Query Parameters"
+description: "Description of your new file."
+---
+
+## **Timeline**
+
+For our search-volume-over-time endpoint, we support 5 years of data. For longer periods, please contact us.
+
+## **Geography**
+
+All Glimpse API endpoints support filtering the results by a `geo` parameter, consisting of the two-letter country code, as defined by ISO 3166-1 alpha-2. Here you can find a list of all available countries and their corresponding codes. https://drive.google.com/file/d/12S2j9CEeHyXFA8gohcrArSk8BBP8_soi/view?usp=sharing
+
+When no geo parameter is specified, worldwide data is returned.
+
+## Phrase Match
+
+Our endpoints all support the use a query parameter called "_phrase match_". To demonstrate what this means, we'll use the keyword "keto diet" as an example.
+
+When _phrase match_ is set to true, the data will reflect activity for any search containing "keto diet", including searches with other words to the left and/or right, like "what is keto diet" or "keto diet recipes".
+
+When _phrase match_ is set to false, the data will reflect activity for any search that contains both "keto" AND "diet", but not necessarily in that order.
+
+## 

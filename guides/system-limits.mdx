@@ -1,40 +1,55 @@
 ---
-title: "Errors"
+title: "New file"
+description: "Description of your new file."
 ---
+
+## Rate Limits
 
 The Glimpse Enterprise API employs rate limiting to prevent abuse or unintentional overloading of the system.
 
-## Rate Limits Per Endpoint
+### Rate Limits Per Endpoint
 
 Every user is limited to the following number of requests per the given period of time:
 
 | Period     | Request Limit |
-| ---------- | ------------- |
+| :--------- | :------------ |
 | Per second | 1             |
 | Per minute | 50            |
 | Per hour   | 350           |
 | Per day    | 6,000         |
 
-## Rate Limit Headers
+### Rate Limit Headers
 
 When you make a request to our API, you'll receive headers that provide you with information regarding your rate limits. The following 3 rate limit headers will be shown for each of the 4 rate limit time periods:
 
-* **RateLimit-\[period]-Limit**: This header indicates the maximum number of requests you're allowed to make in the given period period.
-* **RateLimit-\[period]-Remaining**: Tells you how many requests you can still make, within the given time period, before hitting the limit.
-* **RateLimit-\[period]-Reset**: Provides the number of seconds left until your rate limit quota, for the given time period, is reset.
+- **RateLimit-[period]-Limit**: This header indicates the maximum number of requests you're allowed to make in the given period period.
+- **RateLimit-[period]-Remaining**: Tells you how many requests you can still make, within the given time period, before hitting the limit.
+- **RateLimit-[period]-Reset**: Provides the number of seconds left until your rate limit quota, for the given time period, is reset.
 
-## What to do after getting a 429 Status Code
+### What to do after getting a 429 Status Code
 
 After hitting a rate limit, and getting a 429 error message, it's best to retry the request.
 
-## **Other Tips for Managing Rate Limits**
+### **Other Tips for Managing Rate Limits**
 
 1. **Spread Your Requests**: If your use case doesn't require immediate data, consider spacing out your requests to avoid hitting the limits.
-
 2. **Handle Limit Reaches Gracefully**: If you reach a rate limit, the API will return a `429` response code. Ensure your application has logic to wait for the necessary time, specified in the rate limit headers in the API's response, before making additional requests. This will also future-proof your code should limits change in the future.
-
 3. **Reach Out for Clarity**: If in doubt or if you think you might have unique needs that require higher limits, don't hesitate to contact our support team at [hello@meetglimpse.com](mailto:hello@meetglimpse.com)
 
 If you get a timeout, it's best to retry the request.
 
+## Caching
 
+All Glimpse data is cached for some degree of time; each endpoint has its own cache duration:
+
+| Endpoint           | Cache Duration |
+| :----------------- | :------------- |
+| Interest           | 24 hours       |
+| Interest Enriched  | 24 hours       |
+| Forecast           | No cache       |
+| Volume             | 7 days         |
+| Geographies        | 7 days         |
+| Channel            | 30 days        |
+| People Also Search | 3 hours        |
+
+## 
