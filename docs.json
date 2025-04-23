@@ -23,7 +23,7 @@
   "navigation": {
       "tabs": [
         {
-          "tab": "Docs",
+          "tab": "Google Trends data API with Absolute Search Volume",
           "openapi": ["glimpse-api.json"],
           "groups": [
             {
