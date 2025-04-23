@@ -21,7 +21,7 @@
     }
   },
   "navigation": {
-      "tabs": [
+      "": [
         {
           "tab": "Docs",
           "openapi": ["glimpse-api.json"],
