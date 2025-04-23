@@ -30,16 +30,8 @@
               "group": "API Overview",
               "pages": [
                 "guides/getting-started",
+                "guides/query-parameters",
                 "guides/faq"
-              ]
-            },
-             {
-              "group": "Additional Resources",
-              "pages": [
-                "guides/phrase-match",
-                "guides/geographical-filtering",
-                "guides/cache-durations",
-                "guides/errors"
               ]
             }
         ]
