@@ -39,7 +39,7 @@
                 "guides/phrase-match",
                 "guides/geographical-filtering",
                 "guides/cache-durations",
-                "guides/errors",
+                "guides/errors"
               ]
             }
         ]
