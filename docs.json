@@ -21,7 +21,7 @@
     }
   },
   "navigation": {
-      "": [
+      "tabs": [
         {
           "tab": "Docs",
           "openapi": ["glimpse-api.json"],
@@ -30,11 +30,16 @@
               "group": "API Overview",
               "pages": [
                 "guides/getting-started",
-                "guides/geographical-filtering",
-                "guides/phrase-match",
-                "guides/cache-durations",
-                "guides/errors",
                 "guides/faq"
+              ]
+            },
+             {
+              "group": "Additional Resources",
+              "pages": [
+                "guides/phrase-match",
+                "guides/geographical-filtering",
+                "guides/cache-durations",
+                "guides/errors"
               ]
             }
         ]
