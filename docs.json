@@ -21,22 +21,23 @@
     }
   },
   "navigation": {
-    "groups": [
-      {
-        "group": "API Overview",
-        "pages": [
-          "guides/getting-started",
-          "guides/geographical-filtering",
-          "guides/phrase-match",
-          "guides/cache-durations",
-          "guides/errors",
-          "guides/faq"
+      "tabs": [
+        {
+          "tab": "Docs",
+          "openapi": ["glimpse-api.json"],
+          "groups": [
+            {
+              "group": "API Overview",
+              "pages": [
+                "guides/getting-started",
+                "guides/geographical-filtering",
+                "guides/phrase-match",
+                "guides/cache-durations",
+                "guides/errors",
+                "guides/faq"
+              ]
+            }
         ]
-      },
-      {
-        "group": "API Reference",
-        "collapsed": false,
-        "openapi": ["glimpse-api.json"]
       }
     ]
   },
