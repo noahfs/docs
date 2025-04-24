@@ -104,7 +104,7 @@
               "application/json": {
                 "example": {
                   "volume": 11643304,
-                  "date": 1745326255
+   				  "timestamp": "2021-12-07T19:19:08Z"
                 }
               }
             }
