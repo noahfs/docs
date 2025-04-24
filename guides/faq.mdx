@@ -2,6 +2,16 @@
 title: "FAQ"
 ---
 
+## **Does your API support Google Trends Topics?**
+
+Yes, in addition to supporting Google Trends' standard keyword queries, we also support Topic queries. If you're not familiar with the concept of Google Trends' Topical keywords, you can read more about it in our [Guide to Google Trends](https://meetglimpse.com/google-trends/search-term-vs-topic/). To use them in our API, simply get the topic code from the keyword you want to search. You can find this in the URL of the Google Trends page you're on; it's the string of text that comes after q=
+
+```
+trends.google.com/trends/explore?q=%2Fm%2F04st9hr
+```
+
+When unencoded, it'll look like this: _/m/04st9hr_
+
 ## Why am I seeing slight variations in historical data?
 
 Google Trends uses a sample dataset (a subset of data representing the whole) rather than the entire dataset, a decision explained in its documentation. This leads to faster loading times and keeps costs down.
