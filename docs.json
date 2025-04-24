@@ -49,7 +49,7 @@
       "href": "https://meetglimpse.com/#api"
     }
   },
-    "modeToggle": {
+    "appearance": {
     "default": "light"
   }
 }
