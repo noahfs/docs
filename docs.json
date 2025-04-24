@@ -48,5 +48,8 @@
       "label": "Get an API Key",
       "href": "https://meetglimpse.com/#api"
     }
+  },
+    "modeToggle": {
+    "default": "light"
   }
 }
