@@ -2,8 +2,8 @@
   "paths": {
     "/v1/interest_enriched": {
       "get": {
-        "summary": "Google Trends Search Volume Over Time API",
-        "description": "This API endpoint returns weekly search volume values, over the past 5 years, for any given keyword.",
+        "summary": "Search Volume Over Time",
+        "description": "This API endpoint returns weekly absolute search volume numbers, over the past 5 years, for any given keyword in any given region.",
         "parameters": [
           {
             "in": "query",
@@ -67,6 +67,8 @@
     },
     "/v1/volume": {
       "get": {
+        "summary": "Search Volume",
+        "description": "This API endpoint returns search volume for the past 30 days for any given keyword.",
         "parameters": [
           {
             "in": "query",
