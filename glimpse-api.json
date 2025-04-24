@@ -58,9 +58,6 @@
                 }
               }
             }
-          },
-          "422": {
-            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
           }
         }
       }
@@ -111,9 +108,6 @@
                 }
               }
             }
-          },
-          "422": {
-            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
           }
         }
       }
