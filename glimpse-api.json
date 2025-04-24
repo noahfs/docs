@@ -1,72 +1,6 @@
 {
   "paths": {
-    "/v1/interest": {
-      "get": {
-        "parameters": [
-          {
-            "in": "query",
-            "name": "keyword",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "in": "query",
-            "name": "phrase_match",
-            "required": false,
-            "schema": {
-              "type": "boolean",
-              "default": false
-            }
-          },
-          {
-            "in": "query",
-            "name": "timeline",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "default": "5yr",
-              "enum": [
-                "all",
-                "5yr",
-                "1yr",
-                "90d",
-                "30d",
-                "7d",
-                "1d",
-                "4h",
-                "1h"
-              ]
-            }
-          },
-          {
-            "in": "query",
-            "name": "geo",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "default": "",
-              "enum": [
-                "AD","AE","AG","AL","AM","AO","AR","AT","AU","AZ","BA","BB","BD","BE","BG","BH","BJ","BN","BO","BR","BS","BT","BW","BY","BZ","CA","CD","CH","CI","CL","CM","CN","CO","CR","CU","CV","CY","CZ","DE","DK","DM","DO","DZ","EC","EE","EG","ES","ET","FI","FJ","FR","GA","GB","GD","GE","GH","GM","GQ","GR","GT","GY","HK","HN","HR","HT","HU","ID","IE","IL","IN","IQ","IR","IS","IT","JM","JO","JP","KE","KG","KH","KI","KR","KW","KZ","LA","LB","LC","LK","LT","LU","LV","LY","MA","MD","ME","MG","MK","MM","MN","MO","MT","MU","MV","MX","MY","MZ","NA","NE","NG","NI","NL","NO","NP","NZ","OM","PA","PE","PH","PK","PL","PR","PT","PY","QA","RO","RS","RU","RW","SA","SB","SC","SD","SE","SG","SI","SK","SN","SR","ST","SV","SY","SZ","TH","TM","TN","TO","TR","TT","TW","TZ","UA","UG","US","UY","UZ","VC","VE","VN","VU","WS","XK","ZA","ZW",""
-              ]
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "422": {
-            "$ref": "#/components/responses/UNPROCESSABLE_ENTITY"
-          },
-          "default": {
-            "$ref": "#/components/responses/DEFAULT_ERROR"
-          }
-        }
-      }
-    },
-    "/v1/interest_enriched": {
+    "search_volume_over_time": {
       "get": {
         "parameters": [
           {
@@ -129,7 +63,7 @@
         }
       }
     },
-    "/v1/volume": {
+    "search_volume": {
       "get": {
         "parameters": [
           {
@@ -169,7 +103,7 @@
               "application/json": {
                 "example": {
                   "volume": 11643304,
-                  "timestamp": 1745326255
+                  "date": 1745326255
                 }
               }
             }
