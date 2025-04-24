@@ -1,6 +1,6 @@
 {
   "paths": {
-    "search_volume_over_time": {
+    "/v1/interest_enriched": {
       "get": {
         "parameters": [
           {
@@ -63,7 +63,7 @@
         }
       }
     },
-    "search_volume": {
+    "/v1/volume": {
       "get": {
         "parameters": [
           {
